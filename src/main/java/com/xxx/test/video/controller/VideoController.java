@@ -26,7 +26,7 @@ public class VideoController {
 
 	@RequestMapping(value = "/stream/{id}", method = RequestMethod.GET)
 	@ResponseBody
-	public ResponseEntity<byte[]> getPreview1(@PathVariable("id") String id, HttpServletRequest request,
+	public ResponseEntity<byte[]> getPreview(@PathVariable("id") String id, HttpServletRequest request,
 			HttpServletResponse response) {
 		ResponseEntity<byte[]> result = null;
 		try {
